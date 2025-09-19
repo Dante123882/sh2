@@ -16,14 +16,7 @@
 </head>
 <body>
     
-    <?php
-        // Si hay un mensaje de confirmación guardado, lo muestra.
-        if (isset($_SESSION['mensaje'])) {
-            echo '<div class="mensaje-exito">' . $_SESSION['mensaje'] . '</div>';
-            // Elimina el mensaje para que no se muestre de nuevo.
-            unset($_SESSION['mensaje']); 
-        }
-    ?>
+    
 
     <h1>SCRIBE</h1>
     <p>Donde tus ideas se escriben:</p>
@@ -49,6 +42,7 @@
 
 </body>
 </html>
+
 
 
 
