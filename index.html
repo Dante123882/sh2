@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCRIBE</title>
-     <link rel="icon" type="images/x-icon" href="image/idea.png">
-  
+    <link rel="icon" type="images/x-icon" href="image/idea.png">
+    
     <link rel="stylesheet" href="estilos/estilos.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,22 +17,19 @@
 <body>
     
     <?php
-    if (isset($_SESSION['mensaje'])) {
+        // Si hay un mensaje de confirmación guardado, lo muestra.
+        if (isset($_SESSION['mensaje'])) {
             echo '<div class="mensaje-exito">' . $_SESSION['mensaje'] . '</div>';
-            unset($_SESSION['mensaje']); // Elimina el mensaje para que no se muestre de nuevo
+            // Elimina el mensaje para que no se muestre de nuevo.
+            unset($_SESSION['mensaje']); 
         }
     ?>
 
     <h1>SCRIBE</h1>
-    <p>Donde tus ideas se escriben:</p>    
-    <p> Scribe es una plataforma simple y elegante diseñada para escritores, poetas, y cualquier persona que quiera compartir sus pensamientos y narrativas de una forma minimalista. A diferencia de otras redes sociales con distracciones visuales, Scribe se enfoca en la palabra escrita.</p>
+    <p>Donde tus ideas se escriben:</p>
+    <p>Scribe es una plataforma simple y elegante diseñada para escritores, poetas, y cualquier persona que quiera compartir sus pensamientos y narrativas de una forma minimalista. A diferencia de otras redes sociales con distracciones visuales, Scribe se enfoca en la palabra escrita.</p>
     <p>Selecciona un tema para saber más:</p>
     <img src="images/lit.jpeg" alt="Imagen del menú principal">
-
-    
-    if (isset($_SESSION['mensaje']))`**: Esta línea verifica si la variable de sesión `mensaje` existe. Si existe (es decir, si el formulario fue enviado exitosamente), entonces se ejecuta el código dentro del `if`.
-    echo '<div class="mensaje-exito">' . $_SESSION['mensaje'] . '</div>'`**: Muestra el mensaje dentro de un `div` con una clase para poder darle estilo.
-    unset($_SESSION['mensaje'])
 
     <ul class="menu-navegacion">
         <li><a href="mma.html">Artes Marciales Mixtas (MMA)</a></li>
@@ -51,8 +48,8 @@
     </section>
 
 </body>
-
 </html>
+
 
 
 
