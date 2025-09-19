@@ -1,0 +1,69 @@
+body {
+    font-family: Zalando Sans Expanded, sans-serif;
+    background-color: #C0C0C0;
+    color: #333;
+    line-height: 1.6;
+    margin: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Estilos para el nuevo menú de navegación */
+.menu-navegacion {
+    display: flex; /* Convierte la lista en un contenedor flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Crea un espacio entre los enlaces */
+    padding: 20px 0;
+}
+
+.menu-navegacion li {
+    background-color: #007bff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Añade una transición suave al pasar el cursor */
+}
+
+.menu-navegacion li a {
+    color: white; /* Color del texto del enlace */
+    font-size: 1.1em;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.menu-navegacion li:hover {
+    transform: translateY(-5px); /* Efecto de "levantar" el botón al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para el efecto 3D */
+}
