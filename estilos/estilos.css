@@ -63,7 +63,51 @@ img {
     text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
+/* Estilos para el formulario de comentarios */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    resize: vertical; /* Permite al usuario redimensionar la caja de texto verticalmente */
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 .menu-navegacion li:hover {
     transform: translateY(-5px); /* Efecto de "levantar" el botón al pasar el cursor */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para el efecto 3D */
+
 }
