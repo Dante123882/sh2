@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad</title>
+    <link rel="icon" type="images/x-icon" href="images/idea.png">
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedor-comentarios">
+        <h1>Comunidad</h1>
+        <p>Bienvenido a la sección de Comunidad. Aquí puedes leer comentarios y opiniones de los usuarios sobre la aplicación.</p>
+        
+        <div class="comentario">
+            <h3 class="usuario">Ana G.</h3>
+            <p class="texto">¡Esta aplicación ha cambiado mi forma de escribir! Es muy intuitiva y me encanta poder organizar mis ideas. ¡Súper recomendada!</p>
+        </div>
+
+        <div class="comentario">
+            <h3 class="usuario">Carlos M.</h3>
+            <p class="texto">La función de borradores es fantástica. Por fin puedo trabajar en mis historias sin miedo a perder el progreso. ¡Excelente trabajo!</p>
+        </div>
+
+        <div class="comentario">
+            <h3 class="usuario">María P.</h3>
+            <p class="texto">Me encanta la comunidad. He descubierto a autores increíbles y he recibido comentarios muy valiosos en mis poemas. Gracias por crear este espacio.</p>
+        </div>
+        
+    </div>
+
+    <section>
+        <h2>Escribe tus reseñas</h2>
+        <p>Cuéntanos lo que piensas.</p>
+        <form action="crear_tema.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="comentario">Tu mensaje:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <a href="index.html">Volver al Menú Principal</a>
+
+</body>
+</html>
